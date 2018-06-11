@@ -8,9 +8,7 @@
 		<email>jcate95@hotmail.com</email>
 		<name>James Cate</name>
 	</owner>
-	<source 
-type="git">git://github.com/jcate95/jcate95overlay.git</source>
-	
+	<source type="git">git://github.com/jcate95/jcate95overlay.git</source>
 <feed>https://github.com/jcate95/jcate95overlay/commits/master.atom</feed>
 </repo>
 </repositories>
