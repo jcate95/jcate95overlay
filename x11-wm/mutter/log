@@ -1,0 +1,14 @@
+
+ * IMPORTANT: 2 config files in '/etc/portage' need updating.
+
+These are the packages that would be merged, in order:
+
+Calculating dependencies  
+ * IMPORTANT: 13 news items need reading for repository 'gentoo'.
+ * Use eselect news read to view new items.
+
+ * See the CONFIGURATION FILES and CONFIGURATION FILES UPDATE TOOLS
+ * sections of the emerge man page to learn how to update config files.
+.... done!
+
+Would you like to add these changes to your config files? [Yes/No] Interrupted.
