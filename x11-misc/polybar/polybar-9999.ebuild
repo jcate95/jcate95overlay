@@ -1,10 +1,10 @@
 EAPI=6
 # Used https://gpo.zugaina.org/AJAX/Ebuild/38346907/View
 PYTHON_COMPAT=( python2_7 )
-inherit cmake-utils python-single-r1
+inherit git-r3 cmake-utils python-single-r1
 DESCRIPTION="A fast, configurable status bar"
-HOMEPAGE=https://github.com/jaagr/polybar
-SRC_URI="https://github.com/jaagr/polybar/archive/3.1.0.tar.gz"
+HOMEPAGE="https://github.com/jaagr/polybar"
+EGIT_REPO_URI="https://github.com/jaagr/polybar"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
