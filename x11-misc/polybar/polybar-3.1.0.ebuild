@@ -4,7 +4,7 @@ PYTHON_COMPAT=( python2_7 )
 inherit cmake-utils python-single-r1
 DESCRIPTION="A fast, configurable status bar"
 HOMEPAGE=https://github.com/jaagr/polybar
-SRC_URI="https://github.com/jaagr/polybar/archive/${PV}.tar.gz"
+SRC_URI="https://github.com/jaagr/polybar/archive/3.1.0.tar.gz"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
