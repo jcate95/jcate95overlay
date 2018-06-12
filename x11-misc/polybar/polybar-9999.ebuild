@@ -8,7 +8,7 @@ EGIT_REPO_URI="https://github.com/jaagr/polybar"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="+alsa i3 mpd curl network pulseaudio"
+IUSE="+alsa i3wm mpd curl network pulseaudio"
 DEPEND="
 x11-libs/libxcb[xkb]
 x11-libs/cairo[xcb]
@@ -22,7 +22,7 @@ alsa? ( media-libs/alsa-lib )
 mpd? ( media-libs/libmpdclient )
 network? ( net-wireless/wireless-tools )
 curl? ( net-misc/curl )
-i3? ( dev-libs/jsoncpp || ( x11-wm/i3 x11-wm/i3-gaps ) )
+i3wm? ( dev-libs/jsoncpp )
 pulseaudio? ( media-sound/pulseaudio )"
 RDEPEND="${DEPEND}"
 src_configure() {
@@ -30,7 +30,7 @@ src_configure() {
 		-DENABLE_ALSA="$(usex alsa)"
 		-DENABLE_MPD="$(usex mpd)"
 		-DENABLE_NETWORK="$(usex network)"
-		-DENABLE_I3="$(usex i3)"
+		-DENABLE_I3="$(usex i3wm)"
 		-DENABLE_CURL="$(usex curl)"
 		-DENABLE_PULSEAUDIO="$(usex pulseaudio)"
 	)
