@@ -1,7 +1,8 @@
+# Copyright 1999-2016 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
 EAPI=6
 
-# Requires python3_6 which is not yet stable in Gentoo
-# Be sure to add `x11-misc/pywal python_targets_python3_6` to /etc/portage/package.use/pywal
 PYTHON_COMPAT=( python{3_5,3_6} )
 
 inherit distutils-r1 git-r3
@@ -15,9 +16,9 @@ EGIT_BRANCH="master"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
+IUSE="?jpeg ?png ?tiff"
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 RDEPEND="
-		media-gfx/imagemagick
-"
+	jpeg? media-libs/imlib2
+	media-gfx/imagemagick"
