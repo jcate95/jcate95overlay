@@ -18,5 +18,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND="" #Pywal depends on dev-python/setuptools[${PYTHON_USEDEP}] -- does oomox? 
+DEPEND="dev-python/pygobject
+        >=x11-libs/gtk+-3.22.19
+        x11-libs/pixbuf2
+        x11-apps/xrdb" #Pywal depends on dev-python/setuptools[${PYTHON_USEDEP}] -- does oomox? 
+#Some of the above may be runtime dependencies
 RDEPEND=""
