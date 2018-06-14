@@ -1,17 +1,16 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-
 EAPI=6
-EGIT_REPO_URI="https://github.com/addy-dclxvi/gtk-theme-collections.git"
+MY_PN="addy-dclxvi-gtkthemes"
 inherit git-r3
-
+SRC_URI=""
+EGIT_REPO_URI="https://github.com/addy-dclxvi/gtk-theme-collections.git"
+KEYWORDS=""
 DESCRIPTION="Themes for GTK+ by addy-dclxvi"
 HOMEPAGE="https://github.com/addy-dclxvi"
 
 LICENSE="GPLv3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
-IUSE="+gtk2 +gtk3"
 
 DEPEND="( >=x11-libs/gtk+-2.24.30:2
           >=x11-libs/gtk+-3.20.0:3
@@ -23,7 +22,7 @@ RDEPEND="${DEPEND}"
 S="${WORKDIR}/${MY_PN}-${PV}"
 
 src_install() {
-	insinto /usr/share/themes/addy-dclxvi
+	insinto /usr/share/themes/addy-dclxvi-gtkthemes
 	doins -r *
 	dodoc README.md
 }
