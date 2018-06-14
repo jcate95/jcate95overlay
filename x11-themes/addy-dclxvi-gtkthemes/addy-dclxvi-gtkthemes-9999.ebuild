@@ -20,9 +20,9 @@ DEPEND="( >=x11-libs/gtk+-2.24.30:2
 RDEPEND="${DEPEND}"
 
 S="${WORKDIR}/${MY_PN}-${PV}"
+rm "$S/*.jpg"
 
 src_install() {
-	rm "$S/*.jpg"
 	insinto /usr/share/themes
 	doins -r *
 	dodoc README.md
