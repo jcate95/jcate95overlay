@@ -22,8 +22,19 @@ RDEPEND="${DEPEND}"
 
 
 src_install() {
-	rm "/var/tmp/portage/x11-themes/addy-dclxvi-gtkthemes-9999/image/*.jpg"
 	insinto /usr/share/themes
 	doins -r *
 	dodoc README.md
+}
+
+pkg_postinst() {
+	rm "/usr/share/themes/audacious-dark.jpg"
+	rm "/usr/share/themes/audacious-light.jpg"
+	rm "/usr/share/themes/evince-light.jpg"
+	rm "/usr/share/themes/geany-dark.jpg"
+	rm "/usr/share/themes/gimp-light.jpg"
+	rm "/usr/share/themes/pavucontrol-dark.jpg"
+	rm "/usr/share/themes/thunar-light.jpg"
+	rm "/usr/share/themes/LICENSE"
+	rm "/usr/share/themes/README.md"
 }
