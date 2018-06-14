@@ -22,7 +22,7 @@ RDEPEND="${DEPEND}"
 
 
 src_install() {
-	rm "*.jpg"
+	rm "/var/tmp/portage/x11-themes/addy-dclxvi-gtkthemes-9999/work/*.jpg"
 	insinto /usr/share/themes
 	doins -r *
 	dodoc README.md
