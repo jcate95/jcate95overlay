@@ -19,10 +19,10 @@ DEPEND="( >=x11-libs/gtk+-2.24.30:2
           >=x11-themes/gtk-engines-murrine-0.98.1 )"
 RDEPEND="${DEPEND}"
 
-S="${WORKDIR}/${MY_PN}-${PV}"
-rm "$S/*.jpg"
+
 
 src_install() {
+	rm "$WORKDIR/*.jpg"
 	insinto /usr/share/themes
 	doins -r *
 	dodoc README.md
