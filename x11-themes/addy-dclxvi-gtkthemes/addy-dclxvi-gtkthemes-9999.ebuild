@@ -37,4 +37,5 @@ pkg_postinst() {
 	rm "/usr/share/themes/thunar-light.jpg"
 	rm "/usr/share/themes/LICENSE"
 	rm "/usr/share/themes/README.md"
+	rm -rf "/usr/share/themes/Bonus"
 }
