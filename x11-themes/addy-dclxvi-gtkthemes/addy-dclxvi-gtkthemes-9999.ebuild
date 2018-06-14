@@ -22,7 +22,7 @@ RDEPEND="${DEPEND}"
 
 
 src_install() {
-	ls "$WORKDIR"
+	rm "${WORKDIR}/*.jpg"
 	insinto /usr/share/themes
 	doins -r *
 	dodoc README.md
