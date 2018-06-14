@@ -22,7 +22,8 @@ RDEPEND="${DEPEND}"
 S="${WORKDIR}/${MY_PN}-${PV}"
 
 src_install() {
-	insinto /usr/share/themes/addy-dclxvi-gtkthemes
+	rm "$S/*.jpg"
+	insinto /usr/share/themes
 	doins -r *
 	dodoc README.md
 }
