@@ -1,3 +1,5 @@
+# Copyright 1999-2016 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
 EAPI=6
 
 # Requires python3_6 which is not yet stable in Gentoo
