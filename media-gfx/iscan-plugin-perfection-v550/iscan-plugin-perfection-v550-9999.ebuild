@@ -10,14 +10,13 @@ MY_PVR="$(replace_version_separator 3 -)"
 
 DESCRIPTION="Epson Perfection V550 scanner plugin for SANE 'epkowa' backend"
 HOMEPAGE="http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX"
-SRC_URI="amd64? 
-( https://download2.ebz.epson.net/iscan/plugin/perfection-v550/rpm/x64/iscan-perfection-v550-bundle-1.0.1.x64.rpm.tar.gz )
-	x86? ( 
-https://download2.ebz.epson.net/iscan/plugin/perfection-v550/rpm/x86/iscan-perfection-v550-bundle-1.0.1.x86.rpm.tar.gz )"
+SRC_URI="amd64? ( https://download2.ebz.epson.net/iscan/plugin/perfection-v550/rpm/x64/iscan-perfection-v550-bundle-1.0.1.x64.rpm.tar.gz )
+	#x86? ( https://download2.ebz.epson.net/iscan/plugin/perfection-v550/rpm/x86/iscan-perfection-v550-bundle-1.0.1.x86.rpm.tar.gz )
+	"
 
 LICENSE="AVASYS"
 SLOT="0"
-KEYWORDS="-* ~amd64 ~x86"
+KEYWORDS="-* ~amd64"
 
 IUSE=""
 
@@ -37,7 +36,7 @@ src_install() {
 	#rm -rf "${WORKDIR}"/iscan-perfection-v550-bundle-1.0.1.x64.rpm
 	rpm2targz "${WORKDIR}"/iscan-perfection-v550-bundle-1.0.1.x64.rpm/plugins/iscan-plugin-perfection-v550-1.0.0-2.x86_64.rpm
 	tar -xzvf "${WORKDIR}"/iscan-plugin-perfection-v550-1.0.0-2.x86_64.tar.gz
-	rm "${WORKDIR}"/iscan-plugin-gt-x820-2.2.0-1.x86_64.tar.gz
+	rm "${WORKDIR}"/iscan-plugin-perfection-v550-1.0.0-2.x86_64.tar.gz
 	rm -rf "${WORKDIR}"/iscan*.rpm
 	insinto /usr/share/iscan
 	doins "${WORKDIR}"/usr/share/iscan/*
