@@ -33,8 +33,8 @@ src_compile() { :; }
 
 src_install() {
 	# install scanner firmware
-	rpm2targz "${WORKDIR}"/plugins/iscan-plugin-perfection-v550-1.0.0*.rpm
-	#rm -rf "${WORKDIR}"/iscan-perfection-v550-bundle-1.0.1*.rpm
+	rpm2targz "${WORKDIR}"/iscan-perfection-v550-bundle-1.0.1.x64.rpm
+	rm -rf "${WORKDIR}"/iscan-perfection-v550-bundle-1.0.1.x64.rpm
 	tar -xzvf "${WORKDIR}"/iscan-perfection-v550.tar.gz
 	insinto /usr/share/iscan
 	doins "${WORKDIR}"/usr/share/iscan/*
