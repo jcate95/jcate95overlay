@@ -10,3 +10,15 @@ HOMEPAGE="https://github.com/themix-project/oomox"
 SRC_URI=""
 EGIT_REPO_URI="https://github.com/themix-project/oomox"
 EGIT_BRANCH="master"
+
+LICENSE="GPL-3"
+SLOT="0"
+KEYWORDS="~amd64 ~x86"
+IUSE=""
+
+DEPEND="dev-python/pygobject
+        >=x11-libs/gtk+-3.22.19
+        x11-libs/pixbuf2
+        x11-apps/xrdb" #Pywal depends on dev-python/setuptools[${PYTHON_USEDEP}] -- does oomox? 
+#Some of the above may be runtime dependencies
+RDEPEND=""
