@@ -8,6 +8,7 @@
 * `x11-misc/xkblayout` (http://git.2f30.org/xkblayout/log.html)
 * `x11-misc/xscreenshot` (http://git.2f30.org/xscreenshot/log.html)
 * `net-im/discurses` (https://github.com/topisani/Discurses)
+* `x11-misc/zenbu` (https://github.com/metakirby5/zenbu)
 
 ## Medium Priority
 * `media-fonts/font-logos` (https://github.com/lukas-w/font-logos)
