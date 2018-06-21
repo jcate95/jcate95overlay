@@ -7,6 +7,7 @@
 * `x11-misc/xkb-switch` (https://github.com/ierton/xkb-switch)
 * `x11-misc/xkblayout` (http://git.2f30.org/xkblayout/log.html)
 * `x11-misc/xscreenshot` (http://git.2f30.org/xscreenshot/log.html)
+* `net-im/discurses` (https://github.com/topisani/Discurses)
 
 ## Medium Priority
 * `media-fonts/font-logos` (https://github.com/lukas-w/font-logos)
