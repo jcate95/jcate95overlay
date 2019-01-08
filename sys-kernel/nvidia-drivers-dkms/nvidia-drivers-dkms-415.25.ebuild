@@ -28,7 +28,7 @@ src_unpack() {
 }
 
 src_prepare() {
-	epatch ""${FILESDIR}"/kernel-4.16.patch"
+	epatch ${DISTDIR}/nvidia
 }
 
 src_install() {
